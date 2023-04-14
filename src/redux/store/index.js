@@ -1,8 +1,14 @@
-// import { configureStore } from '@reduxjs/toolkit';
-// import counterReducer from '../features/counter/counterSlice';
+import { combineReducers, configureStore } from '@reduxjs/toolkit';
+import homeReducer from '../reducers/home';
 
-// export const store = configureStore({
-//   reducer: {
-//     counter: counterReducer,
-//   },
-// });
+const bigReducer = combineReducers({
+    home: homeReducer,
+    // artist: artistReducer,
+    // album: albumReducer,
+})
+
+export const store = configureStore({
+  reducer: bigReducer,
+});
+
+export default store
