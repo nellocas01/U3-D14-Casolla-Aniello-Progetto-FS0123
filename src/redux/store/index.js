@@ -1,14 +1,14 @@
-import { combineReducers, configureStore } from '@reduxjs/toolkit';
-import homeReducer from '../reducers/home';
+// import { combineReducers, configureStore } from '@reduxjs/toolkit';
+// import homeReducer from '../reducers/home';
 
-const bigReducer = combineReducers({
-    home: homeReducer,
-    // artist: artistReducer,
-    // album: albumReducer,
-})
+// const bigReducer = combineReducers({
+//     home: homeReducer,
+//     // artist: artistReducer,
+//     // album: albumReducer,
+// })
 
-export const store = configureStore({
-  reducer: bigReducer,
-});
+// export const store = configureStore({
+//   reducer: bigReducer,
+// });
 
-export default store
+// export default store
