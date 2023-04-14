@@ -3,16 +3,17 @@ import "./App.css";
 import Home from "./components/Home";
 import AlbumPage from "./components/AlbumPage";
 import ArtistPage from "./components/ArtistPage";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Home />
-        <AlbumPage />
-        <ArtistPage />
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/album-page" element={<AlbumPage />} />
+        <Route path="/artist-page" element={<ArtistPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
